@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+  
+    display: grid;
+    grid-template-columns: repeat(12, 65px);
+    grid-template-rows:100vh;
+    grid-column-gap: 20px;
+    font: normal normal bold 20px/24px Calibri; /* поменять на roboto */
+    color: #707070;
+
+    padding: 0;
+    margin: 0;
+    background-color: rgb(206, 204, 204);
+    /* grid-auto-columns: minmax(auto,65px); */
+
+}
+
+
+form{
+
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+.forform{
+    display: flex;
+}
+input[type="text"]{
+    width: 255px;
+    height:24px;
+    padding-top: 4px;
+    padding-bottom:3px ;
+    padding-right:5px ;
+    padding-left:5px ;
+}
+.card-container{
+    
+    width: 570px;
+    height:100vh;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    background:#FFFFFF 0% 0% no-repeat padding-box; 
+    min-height: 700px;
+
+}
+h1{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 15px;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+.button{
+    width: 126px;
+    height: 32px;
+    background: #3F88E8 0% 0% no-repeat padding-box;
+    border-radius: 32px;
+    border:0px;
+    color:white;
+}
+.button:hover{
+    color:black;
+    background: #116feb 0% 0% no-repeat padding-box;
+    cursor:pointer;
+}
+.font, .font-size{
+    display:flex;
+    border:2px solid #a0a0a0;
+    border-radius: 3px;
+    width:108px;
+    justify-content: center;
+    align-items: center;
+    height:23px;
+    margin-top:29px;
+    margin-left: 24px;
+}
+.check-phone{
+    margin-top:29px;
+
+}
+.font-size{
+    margin-left:12px;
+    font-size: 13px;
+    color:black;
+}
+
+.check__input {
+    display: none;
+
+
+}
+
+.check__radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height:20px;
+    background-color: white;
+}
+.check__box{
+    width: 18px;
+    height:18px;
+    background-image: url(Group\ 416.svg);
+}
+.first{
+    background-image: url(Group\ 645.png);
+}
+.second{
+    background-image: url(Group\ 643.png);
+}
+.third{
+    background-image: url(Group\ 646.png);
+}
+
+.check__input:checked + .check__radio {
+    background-color:#d8d6d6;
+} 
+.check__input:checked + .check__box {
+    background-image: url(Group\ 384.svg);
+} 
+.check__email, .check__adr{
+    width: 18px;
+    height:18px;
+    margin:0;
+    margin-right: 6px;
+    
+}
+.check-email, .check-adr{
+    
+    font-size: 15px;
+    font-weight: normal;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    height:18px;
+    margin-top:32px;
+    margin-left: 24px;
+    
+}
+.tel{
+    display: flex;
+    flex-direction: column;
+
+}
+.check-phone{
+    font-weight: normal;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.text-tel{
+    margin-left:6px;
+}
+.resultdiv,.resultdivv{
+    margin-top:78px;
+    background-color: white;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    height:268px;
+    width:445px;
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: space-between; */
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 12px #00000029;
+    border: 1px solid #707070A8;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 52px;
+}
+.firstdiv{
+    font: normal normal normal 10px Roboto;
+    margin-top: 22px;
+}
+.seconddiv{
+    font: normal normal bold 26px Roboto;
+    margin-top: 30px;
+}
+.thirddiv{
+    font: normal normal normal 14px Roboto;
+    margin-top: 5px;
+    margin-bottom:15px; 
+}
+.fourthdiv>div{
+    margin-top:10px;
+}
+.fourthdiv, .fivthdiv, .sixthdiv{
+    align-self: flex-start;
+    font: normal normal normal 12px Roboto;
+    margin-left: 222px;
+    margin-top: 10px;
+    
+}

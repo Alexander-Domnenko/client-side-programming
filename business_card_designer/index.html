@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="card-container">
+        
+            <h1>Конструктор визиток</h1>
+            <form name="test" onsubmit="return handleForm(this)">
+                <div class="organization forform">
+                    <label>Наименование организации<br>
+                        <input type="text" name="orgname" id="orgname" value='ООО "Ориентир"' required>
+                    </label>
+                </div>
+                <div class="fio forform">
+                    <label>ФИО<br>
+                        <input type="text" name="fullname" id="fullname" value="Фёдoров Иван Семенович" required>
+                    </label>
+                    <!-- шрифт -->
+                    <div class="font">
+                        <label>
+
+                                <input type="radio" name="font-aligment" class="check__input">
+                                <div class="check__radio first"></div>
+                            
+                        </label>
+                        <label>
+                            
+                                <input type="radio" name="font-aligment" class="check__input" checked>
+                                <div class="check__radio second"></div>
+                            
+                        </label>
+                        <label>
+                            
+                                <input type="radio" name="font-aligment" class="check__input">
+                                <div class="check__radio third"></div>
+                            
+                        </label>
+                    </div>
+                    <!-- размер шрифта -->
+                    <div class="font-size">
+                        <label>
+
+                                <input type="radio" name="font" class="check__input">
+                                <div class="check__radio">24px</div>
+                            
+                        </label>
+                        <label>
+                            
+                                <input type="radio" name="font" class="check__input" checked>
+                                <div class="check__radio">26px</div>
+                            
+                        </label>
+                        <label>
+                            
+                                <input type="radio" name="font" class="check__input">
+                                <div class="check__radio">28px</div>
+                            
+                        </label>
+                    </div>
+                </div>
+                <div class="rank forform" >
+                <label>Должность<br>
+                    <input type="text" name="workpost" id="workpost" value="Менеджер по развитию" required>
+                </label>
+
+
+                    <!-- шрифт -->
+                    <div class="font">
+                        <label>
+
+                                <input type="radio" name="workpost-aligment" class="check__input">
+                                <div class="check__radio first"></div>
+                            
+                        </label>
+                        <label>
+                            
+                                <input type="radio" name="workpost-aligment" class="check__input" checked>
+                                <div class="check__radio second"></div>
+                            
+                        </label>
+                        <label>
+                            
+                                <input type="radio" name="workpost-aligment" class="check__input">
+                                <div class="check__radio third"></div>
+                            
+                        </label>
+                    </div>
+                    <!-- размер шрифта -->
+                    <div class="font-size">
+                        <label>
+
+                                <input type="radio" name="font-rank" class="check__input">
+                                <div class="check__radio">14px</div>
+                            
+                        </label>
+                        <label>
+                            
+                                <input type="radio" name="font-rank" class="check__input" checked>
+                                <div class="check__radio">16px</div>
+                            
+                        </label>
+                        <label>
+                            
+                                <input type="radio" name="font-rank" class="check__input">
+                                <div class="check__radio">18px</div>
+                            
+                        </label>
+                    </div>
+               
+                
+                </div>
+                <div class="tel forform">
+                <label>Телефон<br>
+                    <input type="text" name="phone" id="phone" value="8 (999) 123-45-67" required>
+                </label>
+
+<!--                 
+                    <label>
+                        <div class="check-phone">
+                            <input type="checkbox" name="check__phone" class="check__input">
+                            <div class="check__box"></div>
+                            <span class="text-tel">Добавить еще один телефон</span>
+                        </div>
+                    </label> -->
+                
+
+                </div>
+                <div class="mail forform">
+                <label>E-mail<br>
+                    <input type="text" name="email" id="email"value="fedorov.is@orientir.org" required> 
+                </label>
+
+
+                
+                    <label>
+                        <div class="check-email">
+                            <input type="checkbox" class="check__email" id="opacity" name="opacity">
+                            <span>Отображать</span>
+                        </div>
+                    </label>
+                
+
+
+                </div>
+                <div class="adr forform">
+                <label>Адрес<br>
+                    <input type="text" name="address" id="address" value="Иркутск, Байкальская, 421, оф. 12" required>
+                </label>
+
+                <label>
+                    <div class="check-adr">
+                        <input type="checkbox"  class="check__adr" id="opacity" name="opacity" checked>
+                        <span>Отображать</span>
+                    </div>
+                </label>
+
+                </div>
+                <input type="submit" name="to-send" id="to-send" class="button">
+            
+            </form>
+        </div>
+        <div class="resultdivv">
+            
+        </div>
+
+<script src="index.js"></script>
+</body>
+</html>
